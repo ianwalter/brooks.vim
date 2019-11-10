@@ -1,13 +1,13 @@
 " Copied from https://github.com/sonph/onehalf
 
 " _g: gui, _c: cterm
-let s:light_g = '#dcdfe4'
+let s:light_g = '#CDD6DB'
 let s:light_c = 255
-let s:med_hi_g = '#5d677a'
+let s:med_hi_g = '#56697A'
 let s:med_hi_c = 243
-let s:med_lo_g = '#313640'
+let s:med_lo_g = '#323A47'
 let s:med_lo_c = 238
-let s:dark_g = '#282c34'
+let s:dark_g = '#1F2124'
 let s:dark_c = 236
 
 let s:green_g = '#99ffcb'
