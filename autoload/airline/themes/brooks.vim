@@ -14,9 +14,9 @@ let s:green_g = '#99ffcb'
 let s:green_c = 114
 let s:blue_g = '#9ad2ea'
 let s:blue_c = 75
-let s:yellow_g = '#e5c07b'
+let s:yellow_g = '#f5c0a2'
 let s:yellow_c = 180
-let s:red_g = '#e06c75'
+let s:red_g = '#ea9aa0'
 let s:red_c = 168
 
 
