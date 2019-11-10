@@ -10,9 +10,9 @@ let s:med_lo_c = 238
 let s:dark_g = '#282c34'
 let s:dark_c = 236
 
-let s:green_g = '#98c379'
+let s:green_g = '#99ffcb'
 let s:green_c = 114
-let s:blue_g = '#61afef'
+let s:blue_g = '#9ad2ea'
 let s:blue_c = 75
 let s:yellow_g = '#e5c07b'
 let s:yellow_c = 180
