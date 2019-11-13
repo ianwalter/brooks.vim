@@ -71,8 +71,8 @@ hi TabLineFill gui=NONE guibg=#404C5C
 hi TabLine guifg=#6691a3 guibg=#404C5C gui=NONE
 hi StatusLine gui=bold guibg=#404C5C guifg=#e6edf0
 hi StatusLineNC gui=NONE guibg=#1f2124 guifg=#e6edf0
-hi Search guibg=#a0aab2 guifg=#e6edf0
+hi Search guibg=#5d7385 guifg=#FAFCFF
 hi VertSplit gui=NONE guifg=#404C5C guibg=NONE
-hi Visual gui=NONE guibg=#404C5C
+hi Visual gui=NONE guibg=#5d7385 guifg=#FAFCFF
 
 hi ColorColumn guibg=#404C5C
