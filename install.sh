@@ -3,13 +3,12 @@
 pwd=$(pwd)
 
 #
-cd ~/.vim/bundle/brooks.vim
-git checkout .
+./cleanup.sh
 
 # Copy directory to vim directory.
 cp -R $pwd/autoload .
 cp -R $pwd/colors .
 
 if [[ $? == 0 ]]; then
-  printf '\n✅ Installed vrooks.vim successfully.\n'
+  printf '\n✅ Installed brooks.vim successfully.\n'
 fi
