@@ -1,9 +1,36 @@
+" Clear existing general highlighting rules.
 hi clear
+
+" Clear existing syntax highlighting rules.
 syntax reset
+
+" Set the theme name.
 let g:colors_name = "brooks"
+
+" Define brooks.vim as a dark background theme.
 set background=dark
+
+"
 set t_Co=256
+
+" Highlight rule for normal tixt.
 hi Normal guifg=#e6edf0 ctermbg=NONE guibg=#1f2124 gui=NONE
+
+" Highlight rule for the line length column.
+hi ColorColumn guibg=#404C5C
+
+" Highlight rule for spelling mistakes.
+hi SpellBad ctermfg=1 ctermbg=NONE cterm=underline
+
+" From: http://www.panozzaj.com/blog/2016/03/21/ignore-urls-and-acroynms-while-spell-checking-vim/
+" Don't mark URL-like things as spelling errors.
+syn match UrlNoSpell '\w\+:\/\/[^[:space:]]\+' contains=@NoSpell
+" Don't count acronyms / abbreviations as spelling errors
+" (all upper-case letters, at least three characters)
+" Also will not count acronym with 's' at the end a spelling error
+" Also will not count numbers that are part of this
+" Recognizes the following as correct:
+syn match AcronymNoSpell '\<\(\u\|\d\)\{3,}s\?\>' contains=@NoSpell
 
 hi DiffText guifg=#ea9aa0 guibg=NONE
 hi ErrorMsg guifg=#ea9aa0 guibg=NONE
@@ -75,4 +102,3 @@ hi Search guibg=#5d7385 guifg=#FAFCFF
 hi VertSplit gui=NONE guifg=#404C5C guibg=NONE
 hi Visual gui=NONE guibg=#5d7385 guifg=#FAFCFF
 
-hi ColorColumn guibg=#404C5C
