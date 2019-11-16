@@ -32,6 +32,9 @@ syn match UrlNoSpell '\w\+:\/\/[^[:space:]]\+' contains=@NoSpell
 " Recognizes the following as correct:
 syn match AcronymNoSpell '\<\(\u\|\d\)\{3,}s\?\>' contains=@NoSpell
 
+" Highlight rule for code folding.
+hi Folded guibg=#5d7385 guifg=#fafcff
+
 hi DiffText guifg=#ea9aa0 guibg=NONE
 hi ErrorMsg guifg=#ea9aa0 guibg=NONE
 hi WarningMsg guifg=#ea9aa0 guibg=NONE
