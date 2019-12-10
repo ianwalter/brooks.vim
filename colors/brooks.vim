@@ -10,27 +10,14 @@ let g:colors_name = "brooks"
 " Define brooks.vim as a dark background theme.
 set background=dark
 
-"
-set t_Co=256
-
-" Highlight rule for normal tixt.
+" Highlight rule for normal text.
 hi Normal guifg=#e6edf0 ctermbg=NONE guibg=#1f2124 gui=NONE
 
 " Highlight rule for the line length column.
 hi ColorColumn guibg=#404C5C
 
 " Highlight rule for spelling mistakes.
-hi SpellBad ctermfg=1 ctermbg=NONE cterm=underline
-
-" From: http://www.panozzaj.com/blog/2016/03/21/ignore-urls-and-acroynms-while-spell-checking-vim/
-" Don't mark URL-like things as spelling errors.
-syn match UrlNoSpell '\w\+:\/\/[^[:space:]]\+' contains=@NoSpell
-" Don't count acronyms / abbreviations as spelling errors
-" (all upper-case letters, at least three characters)
-" Also will not count acronym with 's' at the end a spelling error
-" Also will not count numbers that are part of this
-" Recognizes the following as correct:
-syn match AcronymNoSpell '\<\(\u\|\d\)\{3,}s\?\>' contains=@NoSpell
+hi SpellBad ctermbg=NONE cterm=underline
 
 " Highlight rule for code folding.
 hi Folded guibg=#5d7385 guifg=#fafcff
