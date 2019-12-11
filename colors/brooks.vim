@@ -45,8 +45,11 @@ hi Folded guibg=#5d7385 guifg=#fafcff
 hi Search guibg=#FFF3C4 guifg=#1f2124
 hi IncSearch term=NONE cterm=NONE gui=NONE guibg=#f5c0a2 guifg=#1f2124
 
-" Highlight rule for matching parens (e.g. {}).
+" Highlight rule for matching parentheses, brackets, braces, etc (e.g. {}, []).
 hi MatchParen guifg=#FCE588 guibg=NONE
+
+" Highlight rule for text selection.
+hi Visual gui=NONE guibg=#f5c0a2 guifg=#1f2124
 
 
 " Syntax
@@ -93,7 +96,7 @@ hi Constant guifg=#baabf5
 " Highlight rule for special keywords (e.g. this).
 hi Special guifg=#baabf5
 
-" Highlight rule for markers (e.g. TODO, FIXME, XXX)
+" Highlight rule for markers (e.g. TODO, FIXME, XXX).
 hi Todo guifg=#FCE588 guibg=NONE
 
 " Highlight rule for stand out text (e.g. HTML links)
@@ -104,6 +107,7 @@ hi Error guifg=#ea9aa0 guibg=NONE
 
 " Highlight rule for preprocessors (e.g. #!/usr/bin/env node).
 hi PreProc guifg=#9ad2ea
+
 
 " ALE
 
@@ -173,4 +177,3 @@ hi TabLine guifg=#6691a3 guibg=#404C5C gui=NONE
 hi StatusLine gui=bold guibg=#404C5C guifg=#e6edf0
 hi StatusLineNC gui=NONE guibg=#1f2124 guifg=#e6edf0
 hi VertSplit gui=NONE guifg=#404C5C guibg=NONE
-hi Visual gui=NONE guibg=#5d7385 guifg=#FAFCFF
