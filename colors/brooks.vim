@@ -54,9 +54,6 @@ hi MatchParen guifg=#FCE588 guibg=NONE
 " Highlight rule for indentifiers (e.g. closing tags).
 hi Identifier term=NONE cterm=NONE ctermfg=NONE guifg=#9ad2ea
 
-" Highlight rule for comments.
-hi Comment guifg=#a0aab2
-
 " Highlight rule for for types (e.g. const, function, null).
 hi Type guifg=#F1B5F5
 
@@ -68,6 +65,9 @@ hi Function guifg=#9ad2ea
 
 " Highlight rule for strings (e.g. "Hello World").
 hi String guifg=#99ffcb
+
+" Highlight rule for comments.
+hi Comment guifg=#a0aab2
 
 " Highlight rule for conditionals (e.g. if, else).
 hi Conditional guifg=#F1B5F5
@@ -102,6 +102,8 @@ hi Underlined guifg=#9ad2ea
 " Highlight rule for errors (linked to by ALEErrorSign).
 hi Error guifg=#ea9aa0 guibg=NONE
 
+" Highlight rule for preprocessors (e.g. #!/usr/bin/env node).
+hi PreProc guifg=#9ad2ea
 
 " ALE
 
@@ -135,7 +137,6 @@ hi cssPseudoClassId guifg=#92fdf2
 hi DiffText guifg=#ea9aa0 guibg=NONE
 hi ErrorMsg guifg=#ea9aa0 guibg=NONE
 hi WarningMsg guifg=#ea9aa0 guibg=NONE
-hi PreProc guifg=#ea9aa0 guibg=NONE
 hi Exception guifg=#ea9aa0 guibg=NONE
 hi DiffDelete guifg=#ea9aa0 guibg=NONE
 hi GitGutterDelete guifg=#ea9aa0 guibg=NONE
